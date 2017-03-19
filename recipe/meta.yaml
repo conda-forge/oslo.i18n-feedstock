@@ -22,13 +22,12 @@ requirements:
   build:
     - python
     - setuptools
-    - pbr >=1.8
+    - pbr >=2.0.0
 
   run:
     - python
     - babel >=2.3.4
     - six >=1.9.0
-    - fixtures
 
 test:
   imports:
@@ -38,8 +37,8 @@ test:
 
 about:
   home: http://docs.openstack.org/developer/oslo.i18n/
+  license_file: LICENSE
   license: Apache 2.0
-  # license_file: No MANIFEST.in included in distribution
   license_family: Apache
   summary: 'Utilities for working with internationalization (i18n) features, especially translation for text strings in an application or library.'
   doc_url: http://docs.openstack.org/developer/oslo.i18n/
