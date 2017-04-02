@@ -1,8 +1,8 @@
 {%set name = "oslo.i18n" %}
-{%set version = "3.7.0" %}
+{%set version = "3.14.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "f534a69013891b64320f5a9d444a4ae0e28d388b6b97f63ee5c7532292454287" %}
+{%set hash_val = "abe0aaa52991dcab81ff92b02d8a4955e3a88feb623b10dd68aea245bb2c7d8e" %}
 {%set build_num = "0" %}
 
 package:
@@ -22,13 +22,12 @@ requirements:
   build:
     - python
     - setuptools
-    - pbr >=1.8
+    - pbr >=2.0.0
 
   run:
     - python
     - babel >=2.3.4
     - six >=1.9.0
-    - fixtures
 
 test:
   imports:
@@ -38,8 +37,8 @@ test:
 
 about:
   home: http://docs.openstack.org/developer/oslo.i18n/
+  license_file: LICENSE
   license: Apache 2.0
-  # license_file: No MANIFEST.in included in distribution
   license_family: Apache
   summary: 'Utilities for working with internationalization (i18n) features, especially translation for text strings in an application or library.'
   doc_url: http://docs.openstack.org/developer/oslo.i18n/
