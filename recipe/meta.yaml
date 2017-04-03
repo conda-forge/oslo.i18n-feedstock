@@ -1,9 +1,9 @@
-{%set name = "oslo.i18n" %}
-{%set version = "3.14.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "abe0aaa52991dcab81ff92b02d8a4955e3a88feb623b10dd68aea245bb2c7d8e" %}
-{%set build_num = "0" %}
+{% set name = "oslo.i18n" %}
+{% set version = "3.15.0" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "8ec9050bdf840b3d5d0154705804e41625b373fff2bac8ada7d58003e378a71e" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
@@ -12,10 +12,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
