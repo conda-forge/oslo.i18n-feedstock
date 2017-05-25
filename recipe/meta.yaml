@@ -1,8 +1,8 @@
 {% set name = "oslo.i18n" %}
-{% set version = "3.15.0" %}
+{% set version = "3.15.3" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8ec9050bdf840b3d5d0154705804e41625b373fff2bac8ada7d58003e378a71e" %}
+{% set hash = "7decfef2def4d844559f610819c709a543f1a715a6bd043b34c741cbb3daa370" %}
 {% set build = 0 %}
 
 package:
