@@ -1,6 +1,6 @@
 {% set name = "oslo.i18n" %}
 {% set version = "3.15.3" %}
-{% set compress_type = "tar.gz" %}
+{% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "7decfef2def4d844559f610819c709a543f1a715a6bd043b34c741cbb3daa370" %}
 {% set build = 0 %}
@@ -10,8 +10,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
@@ -22,11 +22,12 @@ requirements:
   build:
     - python
     - setuptools
-    - pbr >=2.0.0
+    - pbr !=2.1.0,>=2.0.0
 
   run:
     - python
-    - babel >=2.3.4
+    - pbr !=2.1.0,>=2.0.0
+    - babel !=2.4.0,>=2.3.4
     - six >=1.9.0
 
 test:
