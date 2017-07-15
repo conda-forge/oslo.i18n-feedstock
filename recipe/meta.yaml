@@ -29,6 +29,7 @@ requirements:
     - pbr !=2.1.0,>=2.0.0
     - babel !=2.4.0,>=2.3.4
     - six >=1.9.0
+    - fixtures
 
 test:
   imports:
