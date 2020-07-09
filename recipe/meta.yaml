@@ -19,27 +19,23 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python
+    - python >=3.6
     - pbr !=2.1.0,>=2.0.0
-    - babel !=2.4.0,>=2.3.4
     - six >=1.10.0
-    - fixtures
 
 test:
   imports:
     - oslo_i18n
-    - oslo_i18n.log
-    - oslo_i18n.fixture
 
 about:
   home: http://docs.openstack.org/developer/oslo.i18n/
   license_file: LICENSE
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   summary: 'Utilities for working with internationalization (i18n) features, especially translation for text strings in an application or library.'
   doc_url: http://docs.openstack.org/developer/oslo.i18n/
@@ -49,3 +45,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - anguslees
+    - tschoonj
