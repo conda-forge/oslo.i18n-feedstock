@@ -29,6 +29,12 @@ requirements:
 test:
   imports:
     - oslo_i18n
+    
+  requires:
+    - pip
+  
+  commands:
+    - pip check
 
 about:
   home: http://docs.openstack.org/developer/oslo.i18n/
