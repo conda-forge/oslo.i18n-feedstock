@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -29,6 +29,12 @@ requirements:
 test:
   imports:
     - oslo_i18n
+    
+  requires:
+    - pip
+  
+  commands:
+    - pip check
 
 about:
   home: http://docs.openstack.org/developer/oslo.i18n/
@@ -41,6 +47,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - pmlandwehr
     - anguslees
     - tschoonj
