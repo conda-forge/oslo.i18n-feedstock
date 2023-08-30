@@ -1,11 +1,11 @@
-About oslo.i18n
-===============
+About oslo.i18n-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oslo.i18n-feedstock/blob/main/LICENSE.txt)
 
 Home: http://docs.openstack.org/developer/oslo.i18n/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oslo.i18n-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utilities for working with internationalization (i18n) features, especially translation for text strings in an application or library.
 
