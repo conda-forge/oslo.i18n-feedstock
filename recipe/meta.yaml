@@ -1,19 +1,19 @@
 {% set name = "oslo.i18n" %}
-{% set version = "6.5.0" %}
+{% set version = "6.5.1" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "9393bcae92eadc5f771132d1c6ab239b19896ff6d885e3afc21a9faa4de924d3" %}
+{% set hash = "ea856a70c5af7c76efb6590994231289deabe23be8477159d37901cef33b109d" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/oslo_i18n-{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
