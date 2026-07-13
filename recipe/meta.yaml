@@ -1,7 +1,8 @@
 {% set name = "oslo.i18n" %}
-{% set version = "6.8.0" %}
+{% set version = "6.9.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "a0b4c64c1396869d7144dca60ad97c7eb028f78f61f91c7007531238051997df" %}
+{% set hash = "574bcf21873b185068bcec951de1ec093158ffdff05a8055fd18ddcb69f69e65" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name }}
